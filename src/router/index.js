@@ -12,6 +12,7 @@ import AdminProductList from '../pages/admin/AdminProductList.vue'
 import AdminProductForm from '../pages/admin/AdminProductForm.vue'
 import AdminCategoryList from '@/pages/admin/AdminCategoryList.vue'
 import AdminCategoryForm from '../pages/admin/AdminCategoryForm.vue'
+import AdminOrder from '@/pages/admin/AdminOrder.vue'
 
 
 export default [
@@ -30,6 +31,7 @@ name: 'AdminDashboard',
 component: AdminDashboard,
 children: [
 { path: 'products', name: 'AdminProductList', component: AdminProductList },
+{ path: 'order', name: 'AdminOrder', component: AdminOrder},
 { path: 'products/new', name: 'AdminProductNew', component: AdminProductForm },
 { path: 'products/:id/edit', name: 'AdminProductEdit', component: AdminProductForm, props: true },
 { path: 'categories/new', name: 'AdminCategoryNew', component: AdminCategoryForm },

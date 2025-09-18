@@ -11,6 +11,11 @@ export function saveCart(cart) {
   localStorage.setItem(CART_KEY, JSON.stringify(cart))
 }
 
+// Public getter for cart
+export function getCart() {
+  return loadCart()
+}
+
 // Add item or increase qty if already in cart
 export function addToCart(product) {
   let cart = loadCart()

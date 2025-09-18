@@ -97,9 +97,9 @@ export default {
   data() {
     return {
       banners: [
-        { image: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/34a17917926931.562c0f7f02c94.jpg', title: 'Big Sale 50% Off', subtitle: 'Grab your favorite products now', link: '/products' },
-        { image: 'https://tse1.mm.bing.net/th/id/OIP.TAF9B0-J663ha7S01r99NAHaKe?w=900&h=1274&rs=1&pid=ImgDetMain&o=7&rm=3', title: 'Exclusive Deals', subtitle: 'Limited time offers', link: '/products' },
-        { image: 'https://i.pinimg.com/736x/f5/e5/b7/f5e5b73bfbd46a2052d0ceb3ac2bfa71.jpg', title: 'Trending Now', subtitle: 'Check out our trending products', link: '/products' }
+        { image: 'https://static.vecteezy.com/system/resources/previews/011/320/988/non_2x/big-sale-banner-design-with-podium-gradient-background-social-media-post-product-advertisement-design-special-discount-design-vector.jpg' , title: 'Big Sale 50% Off', subtitle: 'Grab your favorite products now', link: '/products' },
+        { image: 'https://as1.ftcdn.net/v2/jpg/05/15/52/04/1000_F_515520410_4tgxVXn5Jx664a6GISFGXWCYUncwuROq.jpg', title: 'Exclusive Deals', subtitle: 'Limited time offers', link: '/products' },
+        {  image: 'https://img.freepik.com/premium-vector/sale-banner-percent-off-best-offer_419341-1170.jpg', title: 'Trending Now', subtitle: 'Check out our trending products', link: '/products' }
       ],
       products: [],
       categories: []

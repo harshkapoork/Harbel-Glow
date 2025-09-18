@@ -32,7 +32,7 @@
           Category: <span class="badge bg-primary">{{ category.name }}</span>
         </p>
         <p class="lead">{{ product.description }}</p>
-        <h4 class="text-success">₹{{ product.price }}</h4>
+       <span class="text-danger text-decoration-line-through ">{{ product.price +250  }}</span> <h4 class="text-primary bold">₹{{ product.price }}</h4>
 
         <!-- Quantity Selector -->
         <div class="d-flex align-items-center mb-3">

@@ -37,6 +37,7 @@
         class="nav-link" 
         :class="{ active: $route.path.startsWith('/admin/products') && !$route.path.endsWith('/new') }"
       >Products</router-link>
+     <router-link class="nav-link" to="/admin/order"  :class="{ active: $route.path.endsWith('/order') && $route.path.includes('/order') }">Orders List</router-link>
 
       <router-link 
         to="/admin/products/new" 
@@ -107,6 +108,7 @@
 
 <script>
 import api from '../../api/mockApi'
+
 import Swal from 'sweetalert2'
 
 export default {
