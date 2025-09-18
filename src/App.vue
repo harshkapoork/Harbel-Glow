@@ -170,14 +170,15 @@ export default {
 
 /* Cart badge */
 .cart-badge {
-  background: #ffc107;
-  color: #000;
+
+  color: white;
   position: absolute;
+  font-weight: bold;
   top: 6px;
   right: -8px;
   font-size: 0.75rem;
   padding: 0.25rem 0.45rem;
-  border: 2px solid rgba(255,255,255,0.15);
+
 }
 
 /* Mobile overlay */
