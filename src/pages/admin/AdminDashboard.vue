@@ -53,7 +53,7 @@
     </nav>
 
     <!-- Categories List -->
-    <div class="mb-4">
+    <div class="mb-4 d-none">
       <h4>Categories</h4>
       <table class="table table-striped">
         <thead>
@@ -86,7 +86,7 @@
       <ul class="list-group">
         <li class="list-group-item d-flex justify-content-between align-items-center" v-for="p in recentProducts" :key="p.id">
           <div>
-            <img :src="p.image" alt="product" class="img-thumbnail me-2" style="width:100px; height:100px;">
+            <img :src="p.image" alt="product" class="img-thumbnail me-2" style="width:90px; height:90px;">
             <strong>{{ p.title }}</strong> - {{ p.price }} ₹
             <small class="text-muted">({{ getCategoryName(p.categoryId) }})</small>
           </div>

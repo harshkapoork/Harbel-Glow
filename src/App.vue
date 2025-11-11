@@ -1,7 +1,12 @@
 <template>
   <div>
+<marquee class=" bg-dark text-white" behavior="" loop="infinite" direction="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, cum! 
+
+</marquee>
+  </div>
+  <div>
     <!-- NAVBAR -->
-    <header class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm" role="navigation">
+    <header class="navbar navbar-expand-lg navbar-dark bg-white sticky-top shadow-sm" role="navigation">
       <div class="container-fluid">
         <!-- Brand -->
         <router-link to="/" class="navbar-brand d-flex align-items-center">
@@ -12,7 +17,7 @@
             height="32"
             class="me-2"
           />
-          <span class="fw-bold text-white">My Shop</span>
+          <span class=" text-black">Nature's Lap</span>
         </router-link>
 
         <!-- Mobile toggle (uses Vue state, not Bootstrap JS) -->
@@ -49,6 +54,10 @@
               <li class="nav-item">
                 <router-link to="/catalog" class="nav-link" exact-active-class="active" @click.native="closeNavIfMobile">Catalog</router-link>
               </li>
+  <li class="nav-item">
+                <router-link to="/admin" class="nav-link" exact-active-class="active" @click.native="closeNavIfMobile">Admin</router-link>
+              </li>
+
               <li class="nav-item">
                 <router-link to="/cart" class="nav-link position-relative" exact-active-class="active" @click.native="closeNavIfMobile">
                   <i class="fas fa-shopping-cart me-1"></i>
@@ -63,9 +72,7 @@
                   </span>
                 </router-link>
               </li>
-              <li class="nav-item">
-                <router-link to="/admin" class="nav-link" exact-active-class="active" @click.native="closeNavIfMobile">Admin</router-link>
-              </li>
+            
             </ul>
           </div>
         </transition>

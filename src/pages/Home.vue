@@ -128,7 +128,10 @@ export default {
       } else {
         cart.push({ ...product, qty: 1 })
       }
+
       saveCart(cart)
+        // Trigger global event to update cart badge
+  window.dispatchEvent(new Event('cart-updated'))
 
       // Show toast
       Swal.fire({
